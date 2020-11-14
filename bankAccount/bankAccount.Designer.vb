@@ -38,7 +38,7 @@ Partial Class frmBankAccount
         Me.btnGo.Location = New System.Drawing.Point(72, 364)
         Me.btnGo.Name = "btnGo"
         Me.btnGo.Size = New System.Drawing.Size(202, 65)
-        Me.btnGo.TabIndex = 0
+        Me.btnGo.TabIndex = 6
         Me.btnGo.Text = "Go"
         Me.btnGo.UseVisualStyleBackColor = True
         '
@@ -47,16 +47,17 @@ Partial Class frmBankAccount
         Me.btnClear.Location = New System.Drawing.Point(298, 364)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(202, 65)
-        Me.btnClear.TabIndex = 1
+        Me.btnClear.TabIndex = 7
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnExit
         '
+        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Location = New System.Drawing.Point(536, 364)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(202, 65)
-        Me.btnExit.TabIndex = 2
+        Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit Program"
         Me.btnExit.UseVisualStyleBackColor = True
         '
@@ -66,7 +67,7 @@ Partial Class frmBankAccount
         Me.lblID.Location = New System.Drawing.Point(5, 4)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(205, 51)
-        Me.lblID.TabIndex = 3
+        Me.lblID.TabIndex = 0
         Me.lblID.Text = "Ryan Isaacson" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CS115 - Fall 2020" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Assignment#10 - Bank Account"
         '
         'lblTitle
@@ -76,7 +77,7 @@ Partial Class frmBankAccount
         Me.lblTitle.Location = New System.Drawing.Point(255, 30)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(263, 51)
-        Me.lblTitle.TabIndex = 4
+        Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "Bank Of Riche$"
         '
         'txtUserInput
@@ -84,7 +85,7 @@ Partial Class frmBankAccount
         Me.txtUserInput.Location = New System.Drawing.Point(159, 204)
         Me.txtUserInput.Name = "txtUserInput"
         Me.txtUserInput.Size = New System.Drawing.Size(138, 22)
-        Me.txtUserInput.TabIndex = 5
+        Me.txtUserInput.TabIndex = 3
         '
         'lstTransactions
         '
@@ -93,16 +94,16 @@ Partial Class frmBankAccount
         Me.lstTransactions.Location = New System.Drawing.Point(440, 142)
         Me.lstTransactions.Name = "lstTransactions"
         Me.lstTransactions.Size = New System.Drawing.Size(231, 180)
-        Me.lstTransactions.TabIndex = 7
+        Me.lstTransactions.TabIndex = 5
         '
         'lblTransactionLog
         '
         Me.lblTransactionLog.AutoSize = True
         Me.lblTransactionLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransactionLog.Location = New System.Drawing.Point(482, 114)
+        Me.lblTransactionLog.Location = New System.Drawing.Point(478, 114)
         Me.lblTransactionLog.Name = "lblTransactionLog"
         Me.lblTransactionLog.Size = New System.Drawing.Size(153, 25)
-        Me.lblTransactionLog.TabIndex = 8
+        Me.lblTransactionLog.TabIndex = 4
         Me.lblTransactionLog.Text = "Transaction Log"
         '
         'lblBeginningBalance
@@ -111,7 +112,7 @@ Partial Class frmBankAccount
         Me.lblBeginningBalance.Location = New System.Drawing.Point(147, 184)
         Me.lblBeginningBalance.Name = "lblBeginningBalance"
         Me.lblBeginningBalance.Size = New System.Drawing.Size(168, 17)
-        Me.lblBeginningBalance.TabIndex = 9
+        Me.lblBeginningBalance.TabIndex = 2
         Me.lblBeginningBalance.Text = "Enter Beginning Balance:"
         '
         'frmBankAccount
