@@ -31,6 +31,8 @@ Partial Class frmBankAccount
         Me.lstTransactions = New System.Windows.Forms.ListBox()
         Me.lblTransactionLog = New System.Windows.Forms.Label()
         Me.lblBeginningBalance = New System.Windows.Forms.Label()
+        Me.picUncleScrooge = New System.Windows.Forms.PictureBox()
+        CType(Me.picUncleScrooge, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnGo
@@ -74,7 +76,7 @@ Partial Class frmBankAccount
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Blackadder ITC", 24.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(255, 30)
+        Me.lblTitle.Location = New System.Drawing.Point(240, 48)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(263, 51)
         Me.lblTitle.TabIndex = 1
@@ -82,7 +84,7 @@ Partial Class frmBankAccount
         '
         'txtUserInput
         '
-        Me.txtUserInput.Location = New System.Drawing.Point(159, 204)
+        Me.txtUserInput.Location = New System.Drawing.Point(72, 197)
         Me.txtUserInput.Name = "txtUserInput"
         Me.txtUserInput.Size = New System.Drawing.Size(138, 22)
         Me.txtUserInput.TabIndex = 3
@@ -91,7 +93,7 @@ Partial Class frmBankAccount
         '
         Me.lstTransactions.FormattingEnabled = True
         Me.lstTransactions.ItemHeight = 16
-        Me.lstTransactions.Location = New System.Drawing.Point(440, 142)
+        Me.lstTransactions.Location = New System.Drawing.Point(519, 142)
         Me.lstTransactions.Name = "lstTransactions"
         Me.lstTransactions.Size = New System.Drawing.Size(231, 180)
         Me.lstTransactions.TabIndex = 5
@@ -100,7 +102,7 @@ Partial Class frmBankAccount
         '
         Me.lblTransactionLog.AutoSize = True
         Me.lblTransactionLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTransactionLog.Location = New System.Drawing.Point(478, 114)
+        Me.lblTransactionLog.Location = New System.Drawing.Point(555, 114)
         Me.lblTransactionLog.Name = "lblTransactionLog"
         Me.lblTransactionLog.Size = New System.Drawing.Size(153, 25)
         Me.lblTransactionLog.TabIndex = 4
@@ -109,11 +111,21 @@ Partial Class frmBankAccount
         'lblBeginningBalance
         '
         Me.lblBeginningBalance.AutoSize = True
-        Me.lblBeginningBalance.Location = New System.Drawing.Point(147, 184)
+        Me.lblBeginningBalance.Location = New System.Drawing.Point(57, 167)
         Me.lblBeginningBalance.Name = "lblBeginningBalance"
         Me.lblBeginningBalance.Size = New System.Drawing.Size(168, 17)
         Me.lblBeginningBalance.TabIndex = 2
         Me.lblBeginningBalance.Text = "Enter Beginning Balance:"
+        '
+        'picUncleScrooge
+        '
+        Me.picUncleScrooge.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picUncleScrooge.Location = New System.Drawing.Point(249, 126)
+        Me.picUncleScrooge.Name = "picUncleScrooge"
+        Me.picUncleScrooge.Size = New System.Drawing.Size(251, 196)
+        Me.picUncleScrooge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picUncleScrooge.TabIndex = 9
+        Me.picUncleScrooge.TabStop = False
         '
         'frmBankAccount
         '
@@ -122,6 +134,7 @@ Partial Class frmBankAccount
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.picUncleScrooge)
         Me.Controls.Add(Me.lblBeginningBalance)
         Me.Controls.Add(Me.lblTransactionLog)
         Me.Controls.Add(Me.lstTransactions)
@@ -133,6 +146,7 @@ Partial Class frmBankAccount
         Me.Controls.Add(Me.btnGo)
         Me.Name = "frmBankAccount"
         Me.Text = "Bank Account"
+        CType(Me.picUncleScrooge, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -147,4 +161,5 @@ Partial Class frmBankAccount
     Friend WithEvents lstTransactions As ListBox
     Friend WithEvents lblTransactionLog As Label
     Friend WithEvents lblBeginningBalance As Label
+    Friend WithEvents picUncleScrooge As PictureBox
 End Class
